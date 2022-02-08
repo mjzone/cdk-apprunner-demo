@@ -9,11 +9,11 @@ export class CdkStack extends cdk.Stack {
       serviceName: "my-apprunner-app",
       sourceConfiguration: {
         authenticationConfiguration: {
-          connectionArn: "Add github connection ARN here",
+          connectionArn: "arn:aws:apprunner:us-west-2:885121665536:connection/apprunnerGithubConnector/7f215ea722b241e2bd47ffbc67a3d048",
         },
         autoDeploymentsEnabled: true,
         codeRepository: {
-          repositoryUrl: "Add github repository URL here",
+          repositoryUrl: "https://github.com/mjzone/cdk-apprunner-demo",
           sourceCodeVersion: {
             type: "BRANCH",
             value: "main",
